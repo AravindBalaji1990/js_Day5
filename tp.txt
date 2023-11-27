@@ -1,1 +1,3 @@
+Abcdef1234abc$^.1234abc
 This is a example for reading into a file --> this is read operation
+this is a new line

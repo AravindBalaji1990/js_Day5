@@ -1,9 +1,13 @@
 //map get 
+// initialisation of the map
+// using the set keyword
 // var map1=new Map();  
 // map1.set(1,"jQuery");  
 // map1.set(2,"AngularJS");  
 // map1.set(3,"Bootstrap");  
   
+// // I am calling the based in the key
+//we use the keyword get to invoke the key from the map
 // console.log(map1.get(1));  
 // console.log(map1.get(2));  
 // console.log(map1.get(3));  
@@ -14,9 +18,11 @@
 // map2.set(2,"AngularJS");  
 // map2.set(3,"Bootstrap");
 // // to retrive the values  
-// var itr=map2.values();  
+// //values() is a keyword to check/retrive the values on the map
+// // var itr=map2.values();  
 // // this will retrieve the keys
-// // var itr=map2.keys();  
+// var itr=map2.keys();  
+// // next() is again a keyword to check whetehr any value exists or not
 // console.log(itr.next().value);  
 // console.log(itr.next().value);  
 // console.log(itr.next().value);
@@ -27,11 +33,18 @@ var map3=new Map();
 map3.set(1,"jQuery");  
 map3.set(2,"AngularJS");  
 map3.set(3,"Bootstrap");  
-console.log('size of the map : ' , map3.size) // getting the total size
-console.log('size of the map : ' , map3.get(2)) // based onthe key we get the values
-var itr=map3.values();  
+
+// getting the total size
+// size is a keyword in js
+console.log('size of the map : ' , map3.size) 
+//// based onthe key we get the values
+console.log('size of the map : ' , map3.get(2)) 
+var itr=map3.keys;  
 // iterate over the map using normal forloop
 for(i=0;i<map3.size;i++)  
   {  
-console.log(itr.next().value);  
-  }  
+    //next -> function available in the iteratable class 
+    //where it checks for the next item availability
+  console.log(itr.next());  
+    
+  }

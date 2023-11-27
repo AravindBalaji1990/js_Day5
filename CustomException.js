@@ -1,6 +1,7 @@
+// constructor function
 function MyCustomError(message) {
     // this the exact error i am going to get for my exception
-  this.name = "error cusotm";
+  // this.name = "error cusotm";
   // if already a pre-defined exception avialable i use message
   // if not i use the other one
   this.message = message || "Default error message";

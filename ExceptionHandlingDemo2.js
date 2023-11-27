@@ -1,6 +1,7 @@
 // try ..catch and throw
 try {  
   if(3>2){
+    // Error - constructor -> class
     throw new Error('This is the throw keyword'); //user-defined throw statement.  
   }
  }  

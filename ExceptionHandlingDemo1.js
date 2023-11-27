@@ -4,7 +4,8 @@ try{
 var a= ["34","32","5","31","24","44","67"];
 console.log(a); 
 //b is undefined but still trying to fetch its value. Thus catch block will be invoked     
+console.log(c); 
+}catch(xyz){  
 console.log(b); 
-}catch(e){  
-console.log("There is error which shows "+e.message); //Handling error  
+console.error("There is error which shows -> "+xyz.message); //Handling error  
 }  

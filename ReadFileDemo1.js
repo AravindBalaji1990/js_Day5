@@ -1,10 +1,12 @@
 // the below code is how we use the file system module
-const fs = require('fs')
+// imports the file system module to the current files
+const abc = require('fs')
 //fs is going to derive your readFile/writeFile operation
-fs.readFile('/Users/aravindbalaji/Documents/Javascript/Day5/tp.txt', (err, inputD) => {
+abc.readFile('/Users/aravindbalaji/Documents/Javascript/JS_Day5/js_Day5/tp.txt','UTF-8', (err, inputD) => {
    if (err) throw err;
    // store the content from the file to a var
    var datastoredfromfile = inputD.toString();
-      // console.log(datastoredfromfile.match(/([a-zA-Z]+)/));
-      console.log(datastoredfromfile.replace('file', 'files'))
+      console.log(typeof datastoredfromfile) // writin gthe content ot the console
+      console.log(datastoredfromfile.match(/([a-zA-Z]+)([0-9]+)([a-z]+)([\$\^\.]+)([0-9]+)([a-z]+)/)); // vlaidation whether the content is string
+      console.log(datastoredfromfile.replace('file', 'files')) // replacing if a word is availabel to another
 })

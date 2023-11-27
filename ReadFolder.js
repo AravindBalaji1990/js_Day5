@@ -4,8 +4,8 @@ var fs = require('fs');
 // console.log(files)
 
 //read through folder
-fs.readdirSync("/Users/aravindbalaji/Documents/Javascript/Day5").forEach((name) =>{
+fs.readdirSync("/Users/aravindbalaji/Documents/Javascript").forEach((name) =>{
     // name.startsWith('E')
-    if(name.startsWith('Ex'))
+    // if(name.startsWith('Ex'))
     console.log(name)
 })
