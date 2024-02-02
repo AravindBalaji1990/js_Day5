@@ -6,7 +6,7 @@ function divide(a,b){
 }
 
 try{
-    let result = divide(10,10)
+    let result = divide(10,0)
     console.log(result)
 }catch(s){
     console.error(s.message)

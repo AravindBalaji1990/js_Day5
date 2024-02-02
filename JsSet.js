@@ -1,17 +1,17 @@
-var set = new Set(); 
-// we add the elements to the set 
+// var set = new Set(); 
+// // we add the elements to the set 
 // set.add("jQuery");  //key hascode -> 876786hgj
 // set.add("AngularJS");  
 // set.add("Bootstrap");  
 // var itr=set.values(); 
-// // check the values inside the set  
-// // next() -> keywor din javascript where it check wether any value is avialable or not
+// // // check the values inside the set  
+// // // next() -> keywor din javascript where it check wether any value is avialable or not
 // console.log(itr.next().value);  
 // console.log(itr.next().value);  
 // console.log(itr.next().value);  
 
-// use of forloop
-// set always starts with starting index of 0
+// // use of forloop
+// // set always starts with starting index of 0
 // var set = new Set();  
 // set.add("jQuery");  //0
 // set.add("AngularJS");  //1
@@ -22,7 +22,7 @@ var set = new Set();
 // console.log(itr.next().value);  
 //   }  
 
-// usageof for in/for each loop
+// // usageof for in/for each loop
 var set = new Set();  
 set.add("jQuery");  
 set.add("AngularJS");  

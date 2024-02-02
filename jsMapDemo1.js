@@ -6,8 +6,8 @@
 // map1.set(2,"AngularJS");  
 // map1.set(3,"Bootstrap");  
   
-// // I am calling the based in the key
-//we use the keyword get to invoke the key from the map
+// // // I am calling the based in the key
+// //we use the keyword get to invoke the key from the map
 // console.log(map1.get(1));  
 // console.log(map1.get(2));  
 // console.log(map1.get(3));  
@@ -19,11 +19,11 @@
 // map2.set(3,"Bootstrap");
 // // to retrive the values  
 // //values() is a keyword to check/retrive the values on the map
-// // var itr=map2.values();  
+// var itr=map2.values();  
 // // this will retrieve the keys
-// var itr=map2.keys();  
+// // var itr=map2.keys();  
 // // next() is again a keyword to check whetehr any value exists or not
-// console.log(itr.next().value);  
+// console.log(itr.value);  
 // console.log(itr.next().value);  
 // console.log(itr.next().value);
 
@@ -39,12 +39,48 @@ map3.set(3,"Bootstrap");
 console.log('size of the map : ' , map3.size) 
 //// based onthe key we get the values
 console.log('size of the map : ' , map3.get(2)) 
-var itr=map3.keys;  
+// var itr=map3.keys;  
 // iterate over the map using normal forloop
-for(i=0;i<map3.size;i++)  
-  {  
-    //next -> function available in the iteratable class 
-    //where it checks for the next item availability
-  console.log(itr.next());  
-    
-  }
+
+
+// for (var [key,value] of map3){
+//   console.log(`${key}-> ${value}`)
+// }
+
+// convert map to array 
+// var maptoarray = Array.from(map3.entries())
+
+// for (var i =0;i<maptoarray.length;i++ ){
+
+//   let key = maptoarray[i][0];
+//   let value = maptoarray[i][1];
+//   console.log(`${key} -> ${value}`)
+// }
+
+
+//add a entry 
+// map3.set(6,"abc")
+// for (var [key,value] of map3){
+//   console.log(`${key}-> ${value}`)
+// }
+// // update the entry
+// map3.set(6,"abcd")
+// for (var [key,value] of map3){
+//     console.log(`${key}-> ${value}`)
+//   }
+
+//   // delete the entry in the map
+//   map3.delete(6)
+
+//   for (var [key,value] of map3){
+//     console.log(`${key}-> ${value}`)
+//   }
+
+var map3=new Map();
+map3.set(1,"jQuery");
+map3.set(2,"AngularJS");
+map3.set(3,"Bootstrap");
+
+for(var [key,value] of map3){
+console.log(`${key}->${value}`)
+}
