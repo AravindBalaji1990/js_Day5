@@ -1,4 +1,5 @@
 // constructor function
+// MycustomError - is user defined name and can be any meaning ful name 
 function MyCustomError(message) {
     // this the exact error i am going to get for my exception
   // this.name = "error cusotm";
@@ -20,7 +21,7 @@ MyCustomError.prototype.constructor = MyCustomError;
 // Example usage:
 function divide(a, b) {
   if (b === 0) {
-    throw new MyCustomError();
+    throw new MyCustomError("divisible is not possible with 0");
   }
   return a / b;
 }
@@ -30,7 +31,7 @@ try {
 } catch (error) {
   if (error instanceof MyCustomError) {
     console.error("Custom Error occurred:", error.message);
-  } else {
-    console.error("Unknown Error occurred:", error.message);
-  }
+    return
+  } 
+  console.error("There is error which shows -> "+error.message); //Handling error  
 }

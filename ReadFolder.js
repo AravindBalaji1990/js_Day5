@@ -4,6 +4,8 @@ var fs = require('fs');
 // console.log(files)
 
 //read through folder
+//readdirSync - this is a keyword in javascript
+// it reads the folder and extracts the foldername from the respective folder
 fs.readdirSync("/Users/aravindbalaji/Documents/Javascript").forEach((name) =>{
     // name.startsWith('E')
     // if(name.startsWith('Ex'))

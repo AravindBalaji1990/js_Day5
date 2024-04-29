@@ -4,7 +4,7 @@ try{
 var a= ["34","32","5","31","24","44","67"];
 console.log(a); 
 //b is undefined but still trying to fetch its value. Thus catch block will be invoked     
-console.log(c); 
+console.log(a[100]); 
 
 }catch(xyz){  
 
